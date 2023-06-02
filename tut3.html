@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vue Tut 3</title>
+    <style>
+        .title {
+            color: red;
+        }
+    </style>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1 v-bind:class="titleClass">Make me red</h1> 
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+          data() {
+            return {
+              titleClass: 'title'
+            }
+          }
+        }).mount('#app')
+    </script>
+        
+</body>
+</html>
